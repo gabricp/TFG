@@ -1,0 +1,20 @@
+name: pytorch_env
+channels:
+  - defaults
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - scikit-image=0.24.0
+  - scipy=1.14.1
+  - numpy=2.1.2
+  - matplotlib=3.9.2
+  - pandas=2.2.3
+  - pytorch=2.4.1
+  - pytorch-cuda=12.4
+  - torchvision=0.19.1
+  - torchaudio 2.4.1
+  - pip=24.2
+  - pip:
+    - opencv-python
+ 
