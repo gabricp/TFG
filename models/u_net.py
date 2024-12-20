@@ -63,7 +63,7 @@ class Up_Conv(nn.Module):
         return self.decoder(x)
 class UNET(nn.Module):
     def __init__(self, input_shape):
-        super(UNET,self).__init__()
+        super().__init__()
 
     def __len__(self):
         return len(self.X)
