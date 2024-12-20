@@ -38,7 +38,7 @@ for image in images_to_segment:
     data = Variable(data)
 
     # slic
-    labels = segmentation.slic(im, compactness=COMPACTNESS, n_segments=args.num_superpixels)
+    labels = segmentation.slic(im, compactness=COMPACTNESS, n_segments=NUM_SUPERPIXELS)
     labels = labels.reshape(im.shape[0]*im.shape[1])
     u_labels = np.unique(labels)
     l_inds = []

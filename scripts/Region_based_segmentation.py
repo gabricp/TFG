@@ -33,8 +33,9 @@ markers = cv2.morphologyEx(markers.astype(np.uint8),
 plt.imsave(f"{DEST_PATH}{IMAGE_NAME}_markers.jpeg", markers, cmap = 'gray')
  
 segmentation = watershed(elevation_map, markers=markers)
+
 plt.imshow(segmentation)
-plt.imsave(f"{DEST_PATH}{IMAGE_NAME}.jpeg", segmentation)
+#plt.imsave(f"{DEST_PATH}{IMAGE_NAME}.jpeg", segmentation)
 plt.title('Watershed segmentation')
 plt.show()
  
